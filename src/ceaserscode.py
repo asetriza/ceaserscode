@@ -24,7 +24,7 @@ def encrypt():
             print('Entered nothing')
         else:
             break
-    
+
     if enc == '+':
         message_user = 'Enter your message to encrypt: '
     elif enc == '-':
@@ -33,7 +33,7 @@ def encrypt():
         message_user = 'Enter your message, try to decrypt : '
 
     message = input(message_user).strip()
-    
+
     if enc == '--':
         pass
     else:
@@ -45,7 +45,7 @@ def encrypt():
                 print('Enter a number in a range 1-25: ')
             else:
                 break
-    
+
 # Расшифровать !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     if enc == '--':
         print('Try find yor message here: ')
@@ -77,7 +77,7 @@ def encrypt():
                     decrypted_decrypted = decrypted_decrypted + message[inc]
                 if message[inc].isupper() is True:
                     decrypted_decrypted = decrypted_decrypted.replace(decrypted_decrypted[-1], letters[ai].upper())
-            
+
             chk_decode_a = []
             for decode in decrypted_decrypted.split():
                 chk_decode = d.check(decode)
@@ -109,7 +109,7 @@ def encrypt():
                 encrypted = encrypted.replace(encrypted[-1], letters[int(position)].upper())
             if position == -1:
                 encrypted = encrypted + letter
-        
+
         if enc == "+":
             print('Encrypted: ' + encrypted)
         else:
